@@ -5,7 +5,7 @@ import airsim
 # purpose of this script is to stress test reset API
 
 # connect to the AirSim simulator 
-client = airsim.MultirotorClient()
+client = airsim.MultirotorClient("172.23.32.1")
 client.confirmConnection()
 client.enableApiControl(True)
 client.armDisarm(True)
